@@ -1,0 +1,29 @@
+.urunler{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    
+    .container{
+        width: 100%;
+        display: flex;
+        position: relative;
+        
+        .options{
+            flex: 2;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+        }
+        .product-area{
+            height: 100%;
+            flex:8;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+}

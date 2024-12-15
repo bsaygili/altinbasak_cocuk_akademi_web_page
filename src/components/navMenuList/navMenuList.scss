@@ -1,0 +1,44 @@
+.navMenuList {
+  width: 300px;
+  height: calc(100vh - 100px);
+  position: fixed;
+  top: 100px;
+  right: -300px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(
+    0deg,
+    rgba(219, 219, 132, 0.6),
+    rgba(5, 5, 5, 0.5)
+  );
+  transition: all 1s ease;
+
+  &.active {
+    right: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 300;
+    width: 60%;
+
+    .menu-item {
+      margin-bottom: 25px;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: inherit;
+      }
+
+      &:hover {
+        font-weight: 500;
+      }
+    }
+  }
+}

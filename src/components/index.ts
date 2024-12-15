@@ -1,0 +1,9 @@
+export { default as Home } from './home/Home';
+export { default as AboutUs } from './aboutUs/AboutUs'
+export { default as Navbar } from './navbar/Navbar';
+export { default as NavMenu } from './navMenuList/NavMenuList';
+export { default as Footer } from './footer/Footer';
+export { default as IconTag } from './iconTag/IconTag';
+export { default as CategoryBar } from './categoryBar/CategoryBar';
+export { default as Gallery } from './gallery/Gallery';
+export { default as Features } from './features/Features';
