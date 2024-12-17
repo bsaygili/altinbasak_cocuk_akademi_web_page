@@ -31,7 +31,13 @@ const Home: React.FC = () => {
 
   return (
     <div className="home" id="home">
-      <div className="bgImg" style={bgImageStyle}></div>
+      <div className="bgImg" style={bgImageStyle}>
+        <div className="overlay">
+          <div className="content">
+            <p>{homePageImages[currentImageIndex]?.motto}</p>
+          </div>
+        </div>
+      </div>
       <div className="contact-icons">
         {CONTACT_LINKS.map(({ href, Icon, className }, index) => (
           <a key={index} href={href} target="_blank" rel="noopener noreferrer" title={href}>

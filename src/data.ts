@@ -59,34 +59,42 @@ export const homePageImages = [
   {
     id: 1,
     img: img_1,
+    motto: "Geleceğin nesillerini yetiştiriyoruz...",
   },
   {
     id: 2,
     img: img_2,
+    motto: "Altınbaşak Çocuk Akademi olarak eğitimi oyun haline getiriyoruz.",
   },
   {
     id: 3,
     img: img_3,
+    motto: "Çocuklarımızın geleceğe hazırlanmaları için eğitimde fark yaratıyoruz.",
   },
   {
     id: 4,
     img: img_4,
+    motto: "Çocuklarımızı güçlü bir şekilde destekliyoruz.",
   },
   {
     id: 5,
     img: img_5,
+    motto: "Çocuklarımızın geleceğe hazırlanmaları için eğitimde fark yaratıyoruz.",
   },
   {
     id: 6,
     img: img_6,
+    motto: "Altınbaşak Çocuk Akademi olarak eğitimi oyun haline getiriyoruz.",
   },
   {
     id: 7,
     img: img_7,
+    motto: "Çocuklarımızı güçlü bir şekilde destekliyoruz.",
   },
   {
     id: 8,
     img: img_8,
+    motto: "Geleceğin nesillerini yetiştiriyoruz...",
   },
   {
     id: 9,
