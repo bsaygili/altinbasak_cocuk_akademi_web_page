@@ -67,23 +67,6 @@
         font-size: 15px;
         line-height: 27px;
       }
-
-      .icons {
-        display: flex;
-        margin-top: 10px;
-        li {
-          margin-right: 10px;
-          .phone {
-            color: #337ab7;
-          }
-          .whatsapp {
-            color: #4dc247;
-          }
-          .instagram {
-            color: #fd3a67;
-          }
-        }
-      }
     }
 
     .content-middle {
@@ -95,6 +78,10 @@
         li {
           list-style-type: "✨";
           padding-left: 5px;
+          a {
+            color: #c4d4cb;
+            text-decoration: none;
+          }
         }
       }
     }
@@ -119,19 +106,73 @@
           margin-bottom: 6px;
           text-align: center;
           span {
-            color: rgb(25, 140, 25);
+            color: #fd3a67;
             margin-right: 7px;
           }
         }
       }
-    }
+      .contact-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        z-index: 1;
 
-    ul {
-      list-style: none;
-      line-height: 38px;
+        @media (max-width: 950px) {
+          bottom: 50px;
+        }
 
-      li {
-        a {
+        * {
+          width: 40px;
+          height: 40px;
+          padding: 5px;
+          color: #fff;
+          margin: 5px;
+
+          @media (max-width: 950px) {
+            width: 25px;
+            height: 25px;
+          }
+        }
+
+        .phone {
+          background: #337ab7;
+          border-radius: 50%;
+
+          &:hover {
+            transition: all 0.5s ease;
+            transform: rotate(30deg);
+          }
+        }
+
+        .whatsapp {
+          background: #4dc247;
+          border-radius: 50%;
+
+          &:hover {
+            transition: all 0.5s ease;
+            transform: rotate(30deg);
+          }
+        }
+
+        .instagram {
+          background: #fd3a67;
+          border-radius: 50%;
+
+          &:hover {
+            transition: all 0.5s ease;
+            transform: rotate(30deg);
+          }
+        }
+
+        .facebook {
+          background: rgb(25, 118, 210);
+          border-radius: 50%;
+
+          &:hover {
+            transition: all 0.5s ease;
+            transform: rotate(30deg);
+          }
         }
       }
     }

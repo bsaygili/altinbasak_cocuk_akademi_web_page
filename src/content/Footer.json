@@ -10,36 +10,42 @@
     "title": "Eğitim Modellerimiz / Yaklaşımlarımız",
     "approaches": [
       {
+        "pathId": 1,
         "id": "bilingual-services",
         "name": "Bilingual Eğitim",
         "short_description": "Bilingual eğitim modelimiz, çocuklarımızın hem ana dilinde hem de İngilizce dilinde eğitim almasını sağlar. Bu sayede çocuklarımız, iki dili de etkin bir şekilde kullanabilirler.",
         "description": "Bilingual, iki farklı dili, iletişim için aynı seviyede kullanabilen kişi demektir. Bilingual eğitimde bireye anadili ile birlikte, bir başka dil, anadili edinmeye benzer bir süreçle edindirilir. Küreselleşen dünyamızda birçok çocuk iki dilli (bilingual) hatta çok dilli olarak büyüyor. Ebeveynlerinden biri faklı dili konuşan her çocuk; evde farklı, okulda farklı bir dile her çocuk (kendi ülkeleri dışında yaşayan ailelerin çocukları ) doğallıkla bu iki dili birden ediniyorlar. Mini Haus olarak yapmayı hedeflediğimiz budur. Çocuklarımıza, şimdi size İngilizce, Almanca öğreteceğiz demek yerine, iki farklı dili konuşan öğretmenleri aracılığıyla onları iki dile de maruz bırakarak, yaşamın doğal akışı içinde oynarken, yemek yarken iki dili birden edindiriyoruz. Böylelikle çocuk yabancı dil eğitimini bir ders olarak değil, günlük yaşamının bir parçası olarak görür, bu da öğrenme sürecini hızlandırır. Çift dilli eğitimin, çocuğun hem akademik, hem sosyal hem de kişilik gelişimine önemli katkıları olduğu bilimsel olarak kanıtlanmıştır. En önemlisi, çift dilli, hatta çok dilli olarak büyüyen çocuklar üzerinde yapılan araştırmalar, bu çocukların bilişsel gelişimlerinin daha hızlı olduğunu göstermektedir.Çok dilli büyüyen çocukların, ilerleyen dönemlerde akademik becerilerinin de daha yüksek olduğu araştırmalarla kanıtlanmıştır. Bu çocuklar, her iki dilin de inceliklerini ve özelliklerini kavrayabilirler, sözel ve yazılı iletişimde rahatlıkla kullanabilirler. Bu program çocuğun sosyal gelişimine de katkı sağlar. Yeni dilleri öğrenmeye karşı olumlu tutumlar sergilemeyi, diğer dillere hoşgörülü yaklaşımı öğrenirler."
       },
       {
+        "pathId": 2,
         "id": "Waldorf-services",
         "name": "Waldorf Eğitim",
         "short_description": "Okul öncesi Waldorf eğitim sistemi içinde yapılan etkinliklerle çocukların düşünce ve hayallerinin mümkün olduğunca serbest bırakılmasına olanak tanınır. ",
         "description": "Okul öncesi Waldorf eğitim sistemi içinde yapılan etkinliklerle çocukların düşünce ve hayallerinin mümkün olduğunca serbest bırakılmasına olanak tanınır. Böylelikle çocuk estetik bir algıya sahip olurken kendi sanatsal bakış açısını kolaylıkla tanımlayabilir. Bu da çocukların bireysel sanat estetiği algısında kendi fikirleriyle öne çıkmalarına imkân verir. Waldorf yaklaşımı her coğrafya ve yerel kültürel yapıya göre farklılıklar içerir. Bununla birlikte yaklaşım, okul öncesi dönemde şu temel özellikleri paylaşır: Her çocuğun ilgi ve kabulüne önem verilmeli. Basit materyallerle çocukların kendi kendine oyun başlatmasına fırsat tanınmalı. Küçük çocuklarının en önemli görevlerinin oyun oynamak olduğu kabul edilmeli. Çocuğun dünyayla sağlıklı iletişim kurması için gerçek deneyimlere odaklanması sağlanmalı. Çocukların hayal gücünü geliştirmek için sanatsal etkinliklere ağırlık verilmeli. Kapasitenin gelişmesi ve faaliyetlerde rol alması için el işi gerektiren fırsatlar çocuğa sunulmalı. Waldorf yaklaşımı etkinlikleri bu ana temeller üzerinden yerel kültürel dokuya uygun şekilde hazırlanır ve uygulanır.Çocukların bireysel üretimlerini yapabilmek için kendilerini keşfettikleri bu eğitim sistemi her geçen gün daha fazla dikkat çekmektedir. Çocuk birey olma yolunda ilerlerken kendini tanır ve sanatsal yeteneklerini keşfeder. Waldorf eğitim sistemi ile okul sürecini tamamlayan öğrenciler iş hayatında da sanatsal yaratıcılıklarıyla öne çıkma avantajı elde eder. Okul ve doğanın iç içe olduğu Waldorf okullarında çocuklar küçük yaştan itibaren öz güven kazanmaya başlar. Bu eğitim sisteminde çocuklar üretip bütüne kattıkları her parça sayesinde kendini özel hisseder. Bu da ilerleyen yaşlarda herkesin gereksinimi olan “kendisini doğru şekilde ifade edebilme yeteneği”nin erkenden kazanılması anlamına gelir. Siz de Waldorf eğitim sistemiyle ilgili daha fazla bilgi edinerek, çocukların öğrenme süreçlerine ne gibi katkılar sağladığını kavrayabilir, sanatsal yeteneklerini keşfetmesi konusunda onlara yardımcı olabilirsiniz."
       },
       {
+        "pathId": 3,
         "id": "montessori-services",
         "name": "Montessori Eğitim",
         "short_description": "Montessori eğitim modeli, çocukların kendi hızlarında öğrenmelerine olanak tanır. Bu sayede çocuklar, kendi ilgi alanlarına yönelik eğitim alabilirler.",
         "description": "Montessori eğitim modeli, çocukların kendi hızlarında öğrenmelerine olanak tanır. Bu sayede çocuklar, kendi ilgi alanlarına yönelik eğitim alabilirler. Montessori eğitiminde, çocukların hızlı ve düşünceli bir şekilde düşünmeleri"
       },
       {
+        "pathId": 4,
         "id": "emilia-reggio-services",
         "name": "Emilia Reggio",
         "short_description": "Emilia Reggio eğitiminde, çocukların yeni dünyada ve yeni hayatlara girişmelerine olanak tanır. Bu sayede çocuklar, kendi kendine özelliklerine göre eğitim alabilirler.",
         "description": "Emilia Reggio eğitiminde, çocukların yeni dünyada ve yeni hayatlara girişmelerine olanak tanır. Bu sayede çocuklar, kendi kendine özelliklerine göre eğitim alabilirler. Emilia Reggio eğitiminde, çocukların yeni dünyada ve yeni hayatlara "
       },
       {
+        "pathId": 5,
         "id": "perma-kültür-services",
         "name": "Perma Kültür",
         "short_description": "Perma Kültür eğitiminde, çocukların kültür, sanat, ve değerlerine olanak tanır. Bu sayede çocuklar, kendi kendine özelliklerine göre eğitim alabilirler.",
         "description": "Perma Kültür eğitiminde, çocukların kültür, sanat, ve değerlerine olanak tanır. Bu sayede çocuklar, kendi kendine özelliklerine göre eğitim alabilirler. Perma Kültür eğitiminde, çocukların kültür, sanat, ve değerlerine "
       },
       {
+        "pathId": 6,
         "id": "enoksis-services",
         "name": "Enoksis",
         "short_description": "Enoksis eğitiminde, çocukların yüzeysel ve kıyafet özelliklerine olanak tanır. Bu sayede çocuklar, kendi kendine özelliklerine göre eğitim alabilirler.",
@@ -49,5 +55,5 @@
   },
   "homepage": "https://altinbasakcocukakademi.com",
   "email": "info@altinbasakcocukakademi.com",
-  "legal": "© 2024. Her Hakkı Saklıdır. Altınbaşak Çocuk Akademi."
+  "legal": "© 2024. Her Hakkı Saklıdır."
 }

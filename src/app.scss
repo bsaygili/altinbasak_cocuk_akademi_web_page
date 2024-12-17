@@ -1,4 +1,6 @@
 .app {
   font-family: "Titillium Web", sans-serif;
   overflow: hidden;
+  -webkit-user-select: none;
+  user-select: none;
 }

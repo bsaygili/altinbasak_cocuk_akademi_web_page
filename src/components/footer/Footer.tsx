@@ -6,6 +6,7 @@ import AOS from "aos";
 import { FooterContent } from "../../content";
 import { CONTACT_LINKS } from "../lib";
 import IconTag from "../iconTag/IconTag";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   useEffect(() => {
@@ -31,15 +32,6 @@ const Footer: React.FC = () => {
           </h4>
           <p>
             {FooterContent.description}</p>
-          <ul className="icons">
-            {CONTACT_LINKS.map(({ href, Icon, className }, index) => (
-              <li key={index}>
-                <a href={href} target="_blank" rel="noopener noreferrer" title={href}>
-                  <IconTag iconKey={Icon as keyof typeof Icons} className={className} fontSize="large" />
-                </a>
-              </li>
-            ))}
-          </ul>
         </div>
         <div className="content-middle content">
           <h4>KURUMSAL</h4>
@@ -52,8 +44,10 @@ const Footer: React.FC = () => {
           <h4>{FooterContent.educations.title.toLocaleUpperCase()}</h4>
           <ul>
             {
-              FooterContent.educations.approaches.map(({ name, id }) => (
-                <li key={id}>{name}</li>
+              FooterContent.educations.approaches.map(({ name, id, pathId }) => (
+                <li key={id}>
+                  <Link to={`/lessons/${pathId}`}>{name}</Link>
+                </li>
               ))
             }
           </ul>
@@ -74,6 +68,13 @@ const Footer: React.FC = () => {
               {FooterContent.phone.mobile} - {FooterContent.phone.landlinephone}
             </li>
           </ul>
+          <div className="contact-icons">
+            {CONTACT_LINKS.map(({ href, Icon, className }, index) => (
+              <a href={href} target="_blank" rel="noopener noreferrer" title={href}>
+                <IconTag iconKey={Icon as keyof typeof Icons} className={className} fontSize="large" />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
       <div
@@ -90,29 +91,6 @@ const Footer: React.FC = () => {
         <p>
           <span className="title">{FooterContent.name}</span> {FooterContent.legal}
         </p>
-        <div className="signature">
-          <p className="designer">
-            Designer/Developer:
-            <a
-              className="name"
-              href="https://www.bahadirsaygili.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="developer-website"
-            >
-              Bahadır SAYGILI
-            </a>
-          </p>
-          <a
-            className="linkedin"
-            href="https://www.linkedin.com/in/bahadir-saygili/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="developer-linkedIn"
-          >
-            <IconTag iconKey="LinkedIn" className="iconLi" />
-          </a>
-        </div>
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { FeaturesContext } from "../../context/FeaturesContext";
-import ProductCategory from "../../components/productCategory/ProductCategory";
 import bg from "../../assets/school/images/9.jpg";
 import { CategoryBar } from "../../components";
 
@@ -12,11 +11,13 @@ const AproachesList: React.FC = () => {
   const { features } = React.useContext(FeaturesContext);
   const { lessonId } = useParams<Record<"lessonId", string>>();
 
-  const [selectId, setSelectId] = React.useState<number | undefined>(undefined);
+  const [selectId, setSelectId] = React.useState<number | undefined>(Number(lessonId) ?? undefined);
 
   React.useEffect(() => {
     if (!lessonId) {
       setSelectId(undefined);
+    } else {
+      setSelectId(Number(lessonId));
     }
   }, [lessonId]);
 
