@@ -3,16 +3,13 @@ import img_1 from "./assets/school/images/1.jpg";
 import img_2 from "./assets/school/images/2.jpg";
 import img_3 from "./assets/school/images/3.jpg";
 import img_4 from "./assets/school/images/4.jpg";
-import img_5 from "./assets/school/images/5.jpg";
-import img_6 from "./assets/school/images/6.jpg";
-import img_7 from "./assets/school/images/7.jpg";
-import img_8 from "./assets/school/images/8.jpg";
-import img_9 from "./assets/school/images/9.jpg";
-import img_10 from "./assets/school/images/10.jpg";
-import img_11 from "./assets/school/images/11.jpg";
-import img_12 from "./assets/school/images/12.jpg";
 
 import ed1 from "./assets/school/images/1.jpg";
+import ed8 from "./assets/school/images/8.jpg";
+import ed11 from "./assets/school/images/11.jpg";
+import ed12 from "./assets/school/images/12.jpg";
+import ed37 from "./assets/school/vids/37.mp4";
+import ed36 from "./assets/school/vids/36.mp4";
 
 import { FooterContent } from "./content";
 
@@ -22,36 +19,42 @@ export const features = [
     name: FooterContent.educations.approaches[0].name,
     img: ed1,
     desc: FooterContent.educations.approaches[0].description,
+    isImage: true,
   },
   {
     id: 2,
     name: FooterContent.educations.approaches[1].name,
-    img: ed1,
+    img: ed37,
     desc: FooterContent.educations.approaches[1].description,
+    isImage: false,
   },
   {
     id: 3,
     name: FooterContent.educations.approaches[2].name,
-    img: ed1,
+    img: ed8,
     desc: FooterContent.educations.approaches[2].description,
+    isImage: true,
   },
   {
     id: 4,
     name: FooterContent.educations.approaches[3].name,
-    img: ed1,
+    img: ed12,
     desc: FooterContent.educations.approaches[3].description,
+    isImage: true,
   },
   {
     id: 5,
     name: FooterContent.educations.approaches[4].name,
-    img: ed1,
+    img: ed36,
     desc: FooterContent.educations.approaches[4].description,
+    isImage: false,
   },
   {
     id: 6,
     name: FooterContent.educations.approaches[5].name,
-    img: ed1,
+    img: ed11,
     desc: FooterContent.educations.approaches[5].description,
+    isImage: true,
   },
 ];
 
@@ -69,47 +72,11 @@ export const homePageImages = [
   {
     id: 3,
     img: img_3,
-    motto: "Çocuklarımızın geleceğe hazırlanmaları için eğitimde fark yaratıyoruz.",
+    motto: "Çocuklarımızın geleceğe en iyi şekilde hazırlanmasını sağlayan bir eğitim sunuyoruz.",
   },
   {
     id: 4,
     img: img_4,
     motto: "Çocuklarımızı güçlü bir şekilde destekliyoruz.",
-  },
-  {
-    id: 5,
-    img: img_5,
-    motto: "Çocuklarımızın geleceğe hazırlanmaları için eğitimde fark yaratıyoruz.",
-  },
-  {
-    id: 6,
-    img: img_6,
-    motto: "Altınbaşak Çocuk Akademi olarak eğitimi oyun haline getiriyoruz.",
-  },
-  {
-    id: 7,
-    img: img_7,
-    motto: "Çocuklarımızı güçlü bir şekilde destekliyoruz.",
-  },
-  {
-    id: 8,
-    img: img_8,
-    motto: "Geleceğin nesillerini yetiştiriyoruz...",
-  },
-  {
-    id: 9,
-    img: img_9,
-  },
-  {
-    id: 10,
-    img: img_10,
-  },
-  {
-    id: 11,
-    img: img_11,
-  },
-  {
-    id: 12,
-    img: img_12,
-  },
+  }
 ];

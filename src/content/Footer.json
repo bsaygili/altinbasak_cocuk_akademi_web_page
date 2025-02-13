@@ -28,28 +28,28 @@
         "id": "montessori-services",
         "name": "Montessori Eğitim",
         "short_description": "Montessori eğitim modeli, çocukların kendi hızlarında öğrenmelerine olanak tanır. Bu sayede çocuklar, kendi ilgi alanlarına yönelik eğitim alabilirler.",
-        "description": "Montessori eğitim modeli, çocukların kendi hızlarında öğrenmelerine olanak tanır. Bu sayede çocuklar, kendi ilgi alanlarına yönelik eğitim alabilirler. Montessori eğitiminde, çocukların hızlı ve düşünceli bir şekilde düşünmeleri"
+        "description": "Montessori eğitimi, İtalyan doktor ve pedagog Maria Montessori tarafından geliştirilen, çocuğun bireysel öğrenme hızına, doğal merakına ve kendi kendine öğrenme yeteneğine dayalı bir eğitim modelidir. Montessori yöntemi, çocuğun doğal öğrenme sürecine saygı göstererek, ona uygun bir ortam sunarak ve öğretmeni bir rehber olarak konumlandırarak geleneksel eğitim sistemlerinden farklılaşır. Bu eğitim modelinde çocuklar, kendi ilgi alanlarına göre aktiviteler seçme özgürlüğüne sahiptir ve öğrenme sürecini kendi hızlarında ilerletirler. Montessori eğitiminin temelinde, çocuğun bireysel gelişimine uygun olarak düzenlenmiş bir çevre, özel olarak tasarlanmış eğitim materyalleri ve yaş grupları arasında etkileşimi teşvik eden bir öğrenme modeli yer alır.Montessori eğitiminde öğretmenler, geleneksel öğretmenlerden farklı olarak yönlendirici bir rol üstlenirler. Çocuğun kendi başına keşfetmesini ve öğrenmesini desteklerken, ona doğrudan bilgi vermek yerine doğru materyalleri kullanarak çocuğun kendi deneyimleri yoluyla bilgiye ulaşmasını sağlarlar. Montessori eğitiminin bir diğer önemli ilkesi de 'hazırlanmış ortam' anlayışıdır. Bu ortam, çocuğun bağımsız çalışmasını teşvik eden, yaşına ve gelişim düzeyine uygun materyallerle donatılmış bir sınıf ortamıdır. Çocuklar bu ortamda serbestçe hareket edebilir, seçtikleri materyallerle ilgilenebilir ve ilgilerini çeken konularda derinleşebilirler."
       },
       {
         "pathId": 4,
         "id": "emilia-reggio-services",
         "name": "Emilia Reggio",
         "short_description": "Emilia Reggio eğitiminde, çocukların yeni dünyada ve yeni hayatlara girişmelerine olanak tanır. Bu sayede çocuklar, kendi kendine özelliklerine göre eğitim alabilirler.",
-        "description": "Emilia Reggio eğitiminde, çocukların yeni dünyada ve yeni hayatlara girişmelerine olanak tanır. Bu sayede çocuklar, kendi kendine özelliklerine göre eğitim alabilirler. Emilia Reggio eğitiminde, çocukların yeni dünyada ve yeni hayatlara "
+        "description": "Reggio Emilia eğitimi, çocuk merkezli ve proje tabanlı bir erken çocukluk eğitim modelidir. Çocukların merak ve keşfetme yoluyla öğrenmelerini teşvik eder. Öğretmenler, çocuklara rehberlik eden birer kolaylaştırıcıdır ve öğrenme süreci, çocukların ilgi alanlarına göre şekillenir. Bu modelde öğrenme ortamı büyük önem taşır ve “üçüncü öğretmen” olarak kabul edilir. Açık, ferah ve yaratıcı alanlar oluşturularak çocukların özgürce keşfetmeleri sağlanır. Sanat, müzik ve drama gibi etkinlikler öğrenme sürecine entegre edilir. Uzun soluklu projeler ve dokümantasyon yöntemiyle çocukların gelişimi takip edilir. Reggio Emilia yaklaşımı, çocukların eleştirel düşünme, iş birliği ve problem çözme becerilerini geliştirmelerine yardımcı olur. Esnek yapısı sayesinde çocukların bireysel farklılıklarına uyum sağlayarak öğrenmeyi keşif yoluyla içselleştirmelerine imkan tanır."
       },
       {
         "pathId": 5,
         "id": "perma-kültür-services",
         "name": "Perma Kültür",
         "short_description": "Perma Kültür eğitiminde, çocukların kültür, sanat, ve değerlerine olanak tanır. Bu sayede çocuklar, kendi kendine özelliklerine göre eğitim alabilirler.",
-        "description": "Perma Kültür eğitiminde, çocukların kültür, sanat, ve değerlerine olanak tanır. Bu sayede çocuklar, kendi kendine özelliklerine göre eğitim alabilirler. Perma Kültür eğitiminde, çocukların kültür, sanat, ve değerlerine "
+        "description": "Permakültür eğitimi, doğayla uyum içinde yaşamayı ve sürdürülebilir bir yaşam tarzı oluşturmayı hedefleyen bir öğrenim sürecidir. Bu eğitim, doğal kaynakları verimli kullanma, ekolojik dengeyi koruma ve kendi kendine yeten sistemler tasarlama konularında bilgi ve beceriler kazandırır. Permakültür, tarım, mimari, enerji ve toplum gibi birçok alanı kapsar. Eğitimde, toprak sağlığını iyileştirme, suyu verimli kullanma, kompost yapımı, doğal tarım teknikleri ve yenilebilir enerji sistemleri gibi pratik konular işlenir. Ayrıca, doğal ekosistemleri gözlemleme, çeşitliliği artırma ve atıkları değerlendirme gibi temel ilkeler öğretilir. Permakültür tasarımı, hem küçük bahçeler hem de büyük araziler için uygulanabilir. Bu eğitim, sadece tarım değil, aynı zamanda topluluk oluşturma, dayanışma ve doğayla bağ kurma gibi sosyal ve etik değerleri de içerir. Permakültür, doğayla iş birliği yaparak daha sağlıklı ve sürdürülebilir bir gelecek inşa etmeyi amaçlar."
       },
       {
         "pathId": 6,
         "id": "enoksis-services",
         "name": "Enoksis",
-        "short_description": "Enoksis eğitiminde, çocukların yüzeysel ve kıyafet özelliklerine olanak tanır. Bu sayede çocuklar, kendi kendine özelliklerine göre eğitim alabilirler.",
-        "description": "Enoksis eğitiminde, çocukların yüzeysel ve kıyafet özelliklerine olanak tanır. Bu sayede çocuklar, kendi kendine özelliklerine göre eğitim alabilirler. Enoksis eğitiminde, çocukların yüzeysel ve kıyafet özelliklerine "
+        "short_description": "Enneagram, dokuz kişilik tipini temel alan bir sistemdir ve eğitimde öğrencilerin öğrenme stillerini, sosyal etkileşimlerini ve kişisel gelişimlerini desteklemek için kullanılabilir.",
+        "description": "Enneagram, dokuz kişilik tipini temel alan bir sistemdir ve eğitimde öğrencilerin öğrenme stillerini, sosyal etkileşimlerini ve kişisel gelişimlerini desteklemek için kullanılabilir. Öğrencilerin kişilik tipleri belirlenerek, her tipin özelliklerine uygun öğrenme yöntemleri ve eğitim planları hazırlanır. Örneğin, mükemmeliyetçi tipler detay odaklı çalışırken, yardımsever tipler işbirlikçi öğrenmeye yatkındır. Enneagram, öğrencilerin duygusal ve sosyal gelişimlerine katkıda bulunurken, sınıf içi dinamikleri iyileştirir. Öğretmenler de kendi tiplerini anlayarak daha etkili öğretim stratejileri geliştirebilir. Bu sistem, öğrencilerin kendilerini tanımalarını, güçlü yönlerini keşfetmelerini ve zayıf yönlerini geliştirmelerini sağlar. Enneagram, eğitimi kişiselleştirilmiş ve bütüncül bir yaklaşımla daha verimli hale getirir."
       }
     ]
   },
