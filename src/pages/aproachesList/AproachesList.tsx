@@ -3,15 +3,40 @@ import { Link, useParams } from "react-router-dom";
 import { FeaturesContext } from "../../context/FeaturesContext";
 import bg from "../../assets/school/images/9.jpg";
 import { CategoryBar } from "../../components";
+import educationImg from "/src/assets/school/images/12.jpg"
 
 import "./aproachesList.scss";
 
+
+const defaultStyle = {
+  textDecoration: "none",
+  color: "#aaa",
+  padding: "0px 20px",
+  borderRight: "1px solid #aaa",
+  outline: "none",
+};
+
+const activeStyle = {
+  ...defaultStyle,
+  color: "black",
+  borderRight: "none",
+};
+
+const categories = [
+  { categoryName: "Anasayfa", link: "/", styleCss: defaultStyle },
+  { categoryName: "Eğitimlerimiz", link: "/lessons", styleCss: defaultStyle },
+];
 
 const AproachesList: React.FC = () => {
   const { features } = React.useContext(FeaturesContext);
   const { lessonId } = useParams<Record<"lessonId", string>>();
 
   const [selectId, setSelectId] = React.useState<number | undefined>(Number(lessonId) ?? undefined);
+  const { img, desc, name, isImage } = features[Number(lessonId) - 1] ?? {};
+
+  const dynamicCategory = lessonId
+    ? { categoryName: name, link: `/lessons/${lessonId}`, styleCss: activeStyle }
+    : { categoryName: "Eğitim Vizyonumuz", link: "/lessons", styleCss: activeStyle };
 
   React.useEffect(() => {
     if (!lessonId) {
@@ -28,58 +53,7 @@ const AproachesList: React.FC = () => {
         alt="altinbasak"
       />
       <div className="category-bar">
-        <CategoryBar
-          data={[
-            {
-              categoryName: "Anasayfa",
-              link: "/",
-              styleCss: {
-                textDecoration: "none",
-                color: "#aaa",
-                padding: "0px 20px",
-                borderRight: "1px solid #aaa",
-                outline: "none",
-              },
-            },
-            {
-              categoryName: "Eğitimlerimiz",
-              link: "/lessons",
-              styleCss: {
-                textDecoration: "none",
-                color: "#aaa",
-                padding: "0px 20px",
-                borderRight: "1px solid #aaa",
-                outline: "none",
-              },
-            }, ...(lessonId
-              ? [
-                {
-                  categoryName: features[Number(lessonId) - 1]?.name,
-                  link: `/lessons/${lessonId}`,
-                  styleCss: {
-                    textDecoration: "none",
-                    color: "black",
-                    padding: "0px 20px",
-                    outline: "none",
-                  },
-                },
-              ]
-              :
-              [
-                {
-                  categoryName: "Eğitim Vizyonumuz",
-                  link: `/lessons`,
-                  styleCss: {
-                    textDecoration: "none",
-                    color: "black",
-                    padding: "0px 20px",
-                    outline: "none",
-                  },
-                },
-              ]
-            )
-          ]}
-        />
+        <CategoryBar data={[...categories, dynamicCategory]} />
       </div>
       <div className="approaches-container">
         <div className="approaches-left">
@@ -106,34 +80,33 @@ const AproachesList: React.FC = () => {
         <div className="features-right">
           <div
             className="main-container"
-          // style={{
-          //   display: "flex",
-          //   flexWrap: "wrap",
-          //   justifyContent: "start",
-          //   alignItems: "start",
-          //   flexDirection: "column",
-          // }}
           >
             <div className="features-right-header" >
-              <h4>{lessonId ? features[Number(lessonId) - 1].name : "Eğitim Vizyonumuz"}</h4>
+              <h4>{lessonId ? name : "Eğitim Vizyonumuz"}</h4>
             </div>
             <div className="features-right-content">
-              <div>
-                <img
-                  src={lessonId ? features[Number(lessonId) - 1].img : ""}
-                  alt="altinbasak"
-                />
-              </div>
+              {img ? (
+                isImage ? (
+                  <img src={img} alt="altinbasak" />
+                ) : (
+                  <video muted autoPlay security="restricted">
+                    <source src={img} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                )
+              ) : (
+                <img src={educationImg} alt="altinbasak" />
+              )}
               <div>
                 <p>
-                  {lessonId ? features[Number(lessonId) - 1].desc : "Yapım aşamasında..."}
+                  {lessonId ? desc : "Yapım aşamasında..."}
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 };
 

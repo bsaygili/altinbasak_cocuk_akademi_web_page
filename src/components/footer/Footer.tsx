@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
           </ul>
           <div className="contact-icons">
             {CONTACT_LINKS.map(({ href, Icon, className }, index) => (
-              <a href={href} target="_blank" rel="noopener noreferrer" title={href}>
+              <a key={index} href={href} target="_blank" rel="noopener noreferrer" title={href}>
                 <IconTag iconKey={Icon as keyof typeof Icons} className={className} fontSize="large" />
               </a>
             ))}
