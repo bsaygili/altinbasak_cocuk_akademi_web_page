@@ -24,7 +24,7 @@ const activeStyle = {
 
 const categories = [
   { categoryName: "Anasayfa", link: "/", styleCss: defaultStyle },
-  { categoryName: "Eğitimlerimiz", link: "/lessons", styleCss: defaultStyle },
+  { categoryName: "Eğitimlerimiz", link: "/eğitimlerimiz", styleCss: defaultStyle },
 ];
 
 const AproachesList: React.FC = () => {
@@ -35,8 +35,8 @@ const AproachesList: React.FC = () => {
   const { img, desc, name, isImage } = features[Number(lessonId) - 1] ?? {};
 
   const dynamicCategory = lessonId
-    ? { categoryName: name, link: `/lessons/${lessonId}`, styleCss: activeStyle }
-    : { categoryName: "Eğitim Vizyonumuz", link: "/lessons", styleCss: activeStyle };
+    ? { categoryName: name, link: `/eğitimlerimiz/${lessonId}`, styleCss: activeStyle }
+    : { categoryName: "Eğitim Vizyonumuz", link: "/eğitimlerimiz", styleCss: activeStyle };
 
   React.useEffect(() => {
     if (!lessonId) {

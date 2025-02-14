@@ -51,7 +51,7 @@ const AboutUs: React.FC = () => {
             data-aos-once="true"
             data-aos-anchor-placement="top-center"
           >
-            <Link to="/about-us">Devamını Oku</Link>
+            <Link to="/hakkimizda">Devamını Oku</Link>
           </button>
         </div>
         <div className="image-container">

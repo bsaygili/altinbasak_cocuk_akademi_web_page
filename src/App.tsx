@@ -13,13 +13,13 @@ function App() {
       <NavMenu menuIsOpen={menuIsOpen} setMenuIsOpen={setMenuIsOpen} />
       <Routes>
         <Route path="/" element={<HomePage />}>
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/ana-sayfa" element={<HomePage />} />
         </Route>
-        <Route path="/about-us" element={<AboutUsPage />} />
-        <Route path="/lessons" element={<AproachesList />}>
+        <Route path="/hakkimizda" element={<AboutUsPage />} />
+        <Route path="/eğitimlerimiz" element={<AproachesList />}>
           <Route path=":lessonId" element={<AproachesList />} />
         </Route>
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/iletisim" element={<ContactPage />} />
       </Routes>
       <Footer />
     </div>

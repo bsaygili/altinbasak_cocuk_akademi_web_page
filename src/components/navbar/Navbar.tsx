@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({ menuIsOpen, setMenuIsOpen }) => {
   return (
     <div className="navbar">
       {/* Logo Section */}
-      <Link to="/home" className="navbar-logo">
+      <Link to="/ana-sayfa" className="navbar-logo">
         <img src={logo} alt="altinbasak_akademi" />
       </Link>
 

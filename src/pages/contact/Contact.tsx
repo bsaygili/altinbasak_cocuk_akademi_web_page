@@ -101,7 +101,7 @@ const Contact: React.FC = () => {
           },
           {
             categoryName: "İletişim",
-            link: "/contact",
+            link: "/iletisim",
             styleCss: {
               textDecoration: "none",
               color: "#aaa",

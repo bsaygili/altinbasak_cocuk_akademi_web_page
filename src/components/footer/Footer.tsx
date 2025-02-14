@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
             {
               FooterContent.educations.approaches.map(({ name, id, pathId }) => (
                 <li key={id}>
-                  <Link to={`/lessons/${pathId}`}>{name}</Link>
+                  <Link to={`/eğitimlerimiz/${pathId}`}>{name}</Link>
                 </li>
               ))
             }
