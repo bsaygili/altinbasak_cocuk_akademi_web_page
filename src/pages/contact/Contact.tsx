@@ -5,6 +5,8 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { FooterContent } from "../../content";
 import { CategoryBar, IconTag } from "../../components";
 import bg_contact from "../../assets/common/bg_contact.jpg";
+import useMailGun from "../../hooks/useMailGun.js";
+import { Snackbar } from "@mui/material";
 
 
 const contactInfo = [
@@ -42,35 +44,27 @@ const Contact: React.FC = () => {
   const [icon, setIcon] = useState(<IconTag iconKey="Telegram" />);
   const [btn, setBtn] = useState("Gönder");
   const [btnState, setBtnState] = useState(false);
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
 
   const { register, handleSubmit, formState: { errors }, reset } = useForm<ContactInputs>();
+
+  const { sendSimpleMessage } = useMailGun()
   const onSubmit: SubmitHandler<ContactInputs> = data => {
-    setBtnState(true);
-    setIcon(<IconTag iconKey="Workspaces" />);
-    setBtn("Gönderiliyor..");
-    fetch('https://altinbasak.online/send-email')
-      .then((response) => {
-        if (response.ok) {
-          setIcon(<IconTag iconKey="Done" />);
-          setBtn("Gönderildi");
-          setBtnState(false);
-          response.json()
-        } else {
-          setIcon(<IconTag iconKey="Error" />);
-          setBtn("Gönderilemedi");
-          setBtnState(false);
-        }
-      }).then(() => {
+
+    if (!Object.values(data).every((item) => item !== "")) {
+      setSnackbarOpen(true);
+      return;
+    } else {
+      setBtnState(true);
+      setIcon(<IconTag iconKey="Workspaces" />);
+      setBtn("Gönderiliyor..");
+      sendSimpleMessage(data).then(() => {
         reset();
+        setBtnState(false);
         setIcon(<IconTag iconKey="Telegram" />);
         setBtn("Gönder");
-      }).finally(() => {
-        setTimeout(() => {
-          setIcon(<IconTag iconKey="Telegram" />);
-          setBtn("Gönder");
-        }, 3000);
       });
-
+    }
   }
 
 
@@ -173,6 +167,13 @@ const Contact: React.FC = () => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1264.9213967644102!2d28.96998912591521!3d41.05790792836375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab79e52423d73%3A0xd218da2a896f701b!2zxZ5pxZ9saSDDtnplbCBBbHTEsW5iYcWfYWsgQW5hb2t1bHU!5e0!3m2!1str!2str!4v1733870483020!5m2!1str!2str"
         />
       </div>
+      <Snackbar
+        anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+        open={snackbarOpen}
+        autoHideDuration={6000}
+        onClose={() => setSnackbarOpen(false)}
+        message="Lütfen tüm alanları doldurunuz!"
+      />
     </div >
   );
 };
