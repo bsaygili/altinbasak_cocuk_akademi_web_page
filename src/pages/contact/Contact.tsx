@@ -6,7 +6,7 @@ import { FooterContent } from "../../content";
 import { CategoryBar, IconTag } from "../../components";
 import bg_contact from "../../assets/common/bg_contact.jpg";
 import useMailGun from "../../hooks/useMailGun.js";
-import { Snackbar } from "@mui/material";
+import { Alert, Snackbar, SnackbarCloseReason } from "@mui/material";
 
 
 const contactInfo = [
@@ -44,7 +44,15 @@ const Contact: React.FC = () => {
   const [icon, setIcon] = useState(<IconTag iconKey="Telegram" />);
   const [btn, setBtn] = useState("Gönder");
   const [btnState, setBtnState] = useState(false);
-  const [snackbarOpen, setSnackbarOpen] = useState(false);
+  const [snackbarOpen, setSnackbarOpen] = useState<{
+    isOpen: boolean;
+    message: string;
+    severity: "success" | "error" | "warning" | "info";
+  }>({
+    isOpen: false,
+    message: "",
+    severity: "success",
+  });
 
   const { register, handleSubmit, formState: { errors }, reset } = useForm<ContactInputs>();
 
@@ -52,7 +60,11 @@ const Contact: React.FC = () => {
   const onSubmit: SubmitHandler<ContactInputs> = data => {
 
     if (!Object.values(data).every((item) => item !== "")) {
-      setSnackbarOpen(true);
+      setSnackbarOpen({
+        isOpen: true,
+        message: "Lütfen tüm alanları doldurunuz!",
+        severity: "error",
+      });
       return;
     } else {
       setBtnState(true);
@@ -63,9 +75,29 @@ const Contact: React.FC = () => {
         setBtnState(false);
         setIcon(<IconTag iconKey="Telegram" />);
         setBtn("Gönder");
+        setSnackbarOpen({
+          isOpen: true,
+          message: "Mesajınız başarıyla gönderildi!",
+          severity: "success",
+        });
       });
     }
   }
+
+  const handleClose = (
+    event?: React.SyntheticEvent | Event,
+    reason?: SnackbarCloseReason,
+  ) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setSnackbarOpen({
+      isOpen: false,
+      message: "",
+      severity: snackbarOpen.severity,
+    });
+  };
 
 
 
@@ -167,13 +199,16 @@ const Contact: React.FC = () => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1264.9213967644102!2d28.96998912591521!3d41.05790792836375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab79e52423d73%3A0xd218da2a896f701b!2zxZ5pxZ9saSDDtnplbCBBbHTEsW5iYcWfYWsgQW5hb2t1bHU!5e0!3m2!1str!2str!4v1733870483020!5m2!1str!2str"
         />
       </div>
-      <Snackbar
-        anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-        open={snackbarOpen}
-        autoHideDuration={6000}
-        onClose={() => setSnackbarOpen(false)}
-        message="Lütfen tüm alanları doldurunuz!"
-      />
+      <Snackbar open={snackbarOpen.isOpen} anchorOrigin={{ vertical: 'top', horizontal: 'right' }} autoHideDuration={4000} onClose={handleClose}>
+        <Alert
+          onClose={handleClose}
+          severity={snackbarOpen.severity}
+          variant="filled"
+          sx={{ width: '100%' }}
+        >
+          {snackbarOpen.message}
+        </Alert>
+      </Snackbar>
     </div >
   );
 };
