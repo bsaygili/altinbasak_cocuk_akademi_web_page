@@ -15,7 +15,7 @@ const AboutUs: React.FC = () => {
   return (
     <div className="aboutus-container" id="about-us-container">
       <div className="wave">
-        <img src={greenwave} alt="wave-green" />
+        <img src={greenwave} alt="wave-green" width="1280" height="750" />
       </div>
       <div className="container top">
         <div className="text">
@@ -66,7 +66,7 @@ const AboutUs: React.FC = () => {
             data-aos-once="true"
             data-aos-anchor-placement="top-center"
           >
-            <img src={welcome} alt="altinbasak_cocuk_akademi_home" />
+            <img src={welcome} alt="altinbasak_cocuk_akademi_home" width="1280" height="750" />
           </div>
         </div>
       </div>
