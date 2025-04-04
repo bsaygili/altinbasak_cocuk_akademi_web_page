@@ -194,10 +194,30 @@ const Contact: React.FC = () => {
           width="100%"
           height="500"
           allowFullScreen={false}
+          referrerPolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d188.03121237062064!2d28.967022903442505!3d41.058075227951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1743725506503!5m2!1str!2str"
+          onLoad={() => {
+            if (!('loading' in HTMLIFrameElement.prototype)) {
+              const iframe = document.querySelector('iframe');
+              if (iframe) {
+                iframe.src = iframe.dataset.src || iframe.src;
+              }
+            }
+          }}
+          data-src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d188.03121237062064!2d28.967022903442505!3d41.058075227951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1743725506503!5m2!1str!2str"
+        >
+        </iframe>
+        {/* 
+        Previous school location
+        <iframe
+          title="Altınbaşak Çocuk Akademi Konumu"
+          width="100%"
+          height="500"
+          allowFullScreen={false}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1264.9213967644102!2d28.96998912591521!3d41.05790792836375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab79e52423d73%3A0xd218da2a896f701b!2zxZ5pxZ9saSDDtnplbCBBbHTEsW5iYcWfYWsgQW5hb2t1bHU!5e0!3m2!1str!2str!4v1733870483020!5m2!1str!2str"
-        />
+        /> */}
       </div>
       <Snackbar open={snackbarOpen.isOpen} anchorOrigin={{ vertical: 'top', horizontal: 'right' }} autoHideDuration={4000} onClose={handleClose}>
         <Alert
